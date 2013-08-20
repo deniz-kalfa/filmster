@@ -7,3 +7,12 @@
 [submodule "presentation"]
 	path = presentation
 	url = git@bitbucket.org:dk_thyms/filmster-presentation.git
+[submodule "core"]
+	path = core
+	url = git@bitbucket.org:dk_thyms/filmster-core.git
+[submodule "core-functional"]
+	path = core-functional
+	url = git@bitbucket.org:dk_thyms/filmster-core-functional.git
+[submodule "core-stubulator"]
+	path = core-stubulator
+	url = git@bitbucket.org:dk_thyms/filmster-core-stubulator.git
