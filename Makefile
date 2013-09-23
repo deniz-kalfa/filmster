@@ -1,14 +1,17 @@
 # type 'make -s list' to see list of targets.
 
-setup-project:
+checkout-project:
 	git checkout develop
 	git submodule update --init --recursive
+
+setup-project:
+	make checkout-project
 	cd presentation && npm install
 	cd presentation-stubulator && npm install
 
 test-app-ci:
-	make setup-project
-	cd presentation-functional && make test-app-ci
+	make checkout-project
+	cd presentation-functional && make test-app-ci -k
 
 ide-idea-clean:
 	rm -rf *iml

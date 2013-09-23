@@ -1,1 +1,1 @@
-include 'presentation', 'presentation-functional', 'presentation-stubulator'
+include 'presentation', 'presentation-functional', 'presentation-stubulator', 'core', 'core-functional', 'core-stubulator'
