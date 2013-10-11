@@ -11,7 +11,8 @@ setup-project:
 
 test-app-ci:
 	make checkout-project
-	cd presentation-functional && make test-app-ci -k
+	cd presentation-functional && make test-app-ci
+	cd core-functional && make test-app-ci
 
 ide-idea-clean:
 	rm -rf *iml
