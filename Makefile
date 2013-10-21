@@ -3,12 +3,12 @@
 checkout-project:
 	git checkout develop
 	git submodule update --init --recursive
-	cd presentation && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation.git && git checkout develop
-	cd presentation-functional && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation-functional.git && git checkout develop
-	cd presentation-stubulator && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation-stubulator.git && git checkout develop
-	cd core && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core.git && git checkout develop
-	cd core-functional && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core-functional.git && git checkout develop
-	cd core-stubulator && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core-stubulator.git && git checkout develop
+	cd presentation && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation.git && git fetch && git checkout develop
+	cd presentation-functional && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation-functional.git && git fetch && git checkout develop
+	cd presentation-stubulator && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation-stubulator.git && git fetch && git checkout develop
+	cd core && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core.git && git fetch && git checkout develop
+	cd core-functional && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core-functional.git && git fetch && git checkout develop
+	cd core-stubulator && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core-stubulator.git && git fetch && git checkout develop
 
 setup-project:
 	make checkout-project
