@@ -3,6 +3,12 @@
 checkout-project:
 	git checkout develop
 	git submodule update --init --recursive
+	cd presentation && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation.git && git checkout develop
+	cd presentation-functional && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation-functional.git && git checkout develop
+	cd presentation-stubulator && git remote rm origin && git remote add origin git@github.com:thyms/filmster-presentation-stubulator.git && git checkout develop
+	cd core && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core.git && git checkout develop
+	cd core-functional && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core-functional.git && git checkout develop
+	cd core-stubulator && git remote rm origin && git remote add origin git@github.com:thyms/filmster-core-stubulator.git && git checkout develop
 
 setup-project:
 	make checkout-project
@@ -10,8 +16,8 @@ setup-project:
 	cd presentation-stubulator && npm install
 
 test-app-ci:
-	make checkout-project
-	cd presentation-functional && make test-app-ci -k
+	cd presentation-functional && make test-app-ci
+	cd core-functional && make test-app-ci
 
 ide-idea-clean:
 	rm -rf *iml
