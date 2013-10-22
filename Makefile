@@ -12,8 +12,10 @@ checkout-project:
 
 setup-project:
 	make checkout-project
-	cd presentation && npm install
-	cd presentation-stubulator && npm install
+	cd presentation && make setup-app
+	cd presentation-stubulator && make setup-app
+	cd core && make setup-app
+	cd core-stubulator && make setup-app
 
 test-app-ci:
 	cd presentation-functional && make test-app-ci
