@@ -1,18 +1,18 @@
 [submodule "presentation-stubulator"]
 	path = presentation-stubulator
-	url = git@bitbucket.org:dk_thyms/filmster-presentation-stubulator.git
+	url = https://github.com/deniz-kalfa/filmster-presentation-stubulator.git
 [submodule "presentation-functional"]
 	path = presentation-functional
-	url = git@bitbucket.org:dk_thyms/filmster-presentation-functional.git
+	url = https://github.com/deniz-kalfa/filmster-presentation-functional.git
 [submodule "presentation"]
 	path = presentation
-	url = git@bitbucket.org:dk_thyms/filmster-presentation.git
+	url = https://github.com/deniz-kalfa/filmster-presentation.git
 [submodule "core"]
 	path = core
-	url = git@bitbucket.org:dk_thyms/filmster-core.git
+	url = https://github.com/deniz-kalfa/filmster-core.git
 [submodule "core-functional"]
 	path = core-functional
-	url = git@bitbucket.org:dk_thyms/filmster-core-functional.git
+	url = https://github.com/deniz-kalfa/filmster-core-functional.git
 [submodule "core-stubulator"]
 	path = core-stubulator
-	url = git@bitbucket.org:dk_thyms/filmster-core-stubulator.git
+	url = https://github.com/deniz-kalfa/filmster-core-stubulator.git

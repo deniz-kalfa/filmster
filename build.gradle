@@ -53,3 +53,17 @@ project(':presentation-functional') {
     }
   }
 }
+
+evaluationDependsOn(':core-functional')
+project(':core-functional') {
+  test.doFirst {
+    project(':core').tasks.jettyRun.daemon = true
+    project(':core').tasks.jettyRun.execute()
+  }
+
+  test.doLast {
+    project(':core').tasks.jettyStop.stopPort = 8081
+    project(':core').tasks.jettyStop.stopKey = 'stopKey'
+    project(':core').tasks.jettyStop.execute()
+  }
+}
