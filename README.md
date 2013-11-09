@@ -1,5 +1,5 @@
 ## Overview ##
-Parent build project for project Filmster.
+Parent project for project Filmster.
 
 ## Setup ##
     git clone git@github.com:deniz-kalfa/filmster.git
